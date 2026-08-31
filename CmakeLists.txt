@@ -1,0 +1,14 @@
+cmake_minimum_required(VERSION 3.10)
+project(OrdersBook)
+
+set(CMAKE_CXX_STANDARD 20)
+
+include_directories(include)
+
+add_executable(main
+    src/main.cpp
+    src/class_order.cpp
+    src/class_Order_Book.cpp
+    src/class_Order_Queue.cpp
+    src/class_Matching_Engine.cpp
+)
